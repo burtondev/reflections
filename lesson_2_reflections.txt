@@ -19,6 +19,12 @@ change?
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+	When fixing bugs, adding new features or creating updates, you'd want to stay on the master. But for things like experimenting with a new feature, or making a different version of your program (e.g. differen language version), then it can be useful to create a new branch.
+
+	In the example, the instructor Caroline created an "easy-mode" branch in order to experiment with a new mode of the game asteroids.
+
+	The alternative is to try and keep these changes all on the master branch, however if a bug is found in the master, then it would be a lot of overhead to correct it. By keeping the branches separate, it keeps developments on these different paths organized.
+
 How do the diagrams help you visualize the branch structure?
 
 What is the result of merging two branches together? Why do we represent it in
