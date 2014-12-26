@@ -14,6 +14,8 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	Once you have completed your logical change, you can add the relevant file(s) to the staging area and commit them. It's like a buffer area. You can finish the change in one file and add it, then move to the next etc. until all files related to the logical change have been edited and added to the stage. Then they are batch committed with the same commit message and have the same commit ID in the repository.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
