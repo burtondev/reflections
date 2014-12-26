@@ -1,0 +1,26 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+	This creates a new repository which enables you to begin tracking changes in documents for the purpose of version control. It stores all the metadata related to all the files in (i.e. commited to) the repository. This includes an ID for each commit, which user commited changes, and where and what type of changes occured since the last commit. In essence, it archives a commit history and makes it easy to revert to older versions.
+
+	Without initializing the git repository, we are unable to use git version control for files not added to a repository. Initialization is the first step - creating the repository.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+	The staging area is a layer "between" the working directory and the repository. The value is that it allows you to batch files together in order to commit them together. This makes sense for interdependent or related files. Files not included will not be commted together. Without the staging area, a user might be forced to add all files in the working directory to the git repository at the same time, and this might not be appropriate, as each commit should encapsulate a logical change to the file(s).
+	
+	Adding a file to the staging area is done with the command git add <filename>.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+How do the diagrams help you visualize the branch structure?
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+manually?
