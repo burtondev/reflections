@@ -1,0 +1,48 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Fill in your answer here:
+    In this lesson, I learned how to use BASH to compare the differences between two files, using the command diff -c. The "diff" stands for difference(s), and the -u is a variable that dictates the format of the results.
+
+	How it works: I navigated to the directory with the two files using cd and ls. Then I used the diff command, and the results showed the content of the files. Any place where a "-" appeared at the start of the line indicated content that was removed. A "+" indicated content that was added. By quickly scanning for these symbols, I was able to focus my search on lines that actually changed, instead of having to read and compare each and every line of code.
+
+	The "-u" format is also very helpful, because if there is a change in a line, it displays the old and new version adjacent to each other, which makes it very easy and quick to compare.
+
+	I can definitely appreciate how much time would be saved by using such a tool. This program looks like it's about 30 or so lines of code, and I only needed to examine 8 of them. If the program was 3,000 lines, it means looking through 800 lines of code, and not having to search through the remaining 1,200!
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Fill in your answer here:
+    Having easy access to the entire history of a file can make me a more efficient programmer, because it will simplify reverting to an older version if required. If a mistake was made and important code, data or functionality was overwritten, it can be found in an older version.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Fill in your answer here:
+    Automatic saving of versions can result in too many or too few versions, incomplete code, code not compiling, and is not based on a logical commitment of code. This can make it difficult to understand what the change represents. By saving manually, we can divide up commits into logical changes and use our comment to label the change. This will help us ration changes into a reasonable amount of versions in a logical fashion.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Fill in your answer here:
+    Git is a version-control system designed to support code developers. Therefore it needs to account for a workflow where one logical change might impact several files (such as changing a function in one file, and then updating the function where it is called in other files).
+    Google Doc workflows might tend to focus on making changes to a single file, rather than multiple files. If the majority of users don't need to save multiple files in a commit, then it would not be time or cost effective for a company like Google to support such a feature.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Fill in your answer here:
+    Once you cd into the directory that contains the repository with the file that you want to compare, use git log to get the ID number of the commits. Then using git diff, you can enter the earlier and later IDs and the results returned will show you the lines that were changed between the two commits. If you have enabled the plugin to colorize the results, each deleted line will be red, and each added line will be green. In this way, you can quickly see which lines have changed. Using git diff -c will put the changes in adjacent lines.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Fill in your answer here:
+    By using git log and git checkout, it is possible to temporarily reinstate the code from previous versions for testing purposes. In this way, by starting at a point where the bug didn't exist, we can test the code and move forward between versions until we isolate the version where the bug was introduced. Then we can use git diff to compare it with the previous version if we want to ascertain how the bug was introduced. Since the checkout is temporary, we can decide if we want to branch out from a version that does not contain the bug, or (now that we know what the bug is and how many files in the repository are affected), we can decide if we want to go back to the 'HEAD' (the most recent version) and remove the bug.
+    Having competent tools that facilitate an efficient process to isolate and correct bugs across files in a repository can be a good reason to give a coder the confidence to "break something".
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here:
+    I'd like to use git to administrate version control on my web development projects, whether it is creating templates, sites, or core development for a CMS.
