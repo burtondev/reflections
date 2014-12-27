@@ -1,0 +1,9 @@
+When would you want to use a remote repository rather than keeping all your work local?
+
+	A remote repository is useful for open-source (or any collaborative) projects where multiple editors 
+	will be working on the same file. It would be difficult to execute such a project if the files were 
+	stored on someone's local client.
+	
+	Another scenario where the convenience of a remote repository would be desirable is where the file editor(s)
+	desire access to the project from multiple devices. Since a remote repository is stored online, it can be 
+	accessed via any appropriate device with an internet connection and git installed.
