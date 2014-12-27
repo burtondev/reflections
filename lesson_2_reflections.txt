@@ -32,5 +32,7 @@ How do the diagrams help you visualize the branch structure?
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	By merging two branches together, the evolution that each branch experienced independently after the point that they diverged is merged together. The diagram illustrates the fact that even though the branch label is deleted, the new tip has two parents, and all of the parent commits for those two branches are preseved. Now git will display them as interleaved and ordered by date.
+
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
