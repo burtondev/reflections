@@ -7,3 +7,7 @@ When would you want to use a remote repository rather than keeping all your work
 	Another scenario where the convenience of a remote repository would be desirable is where the file editor(s)
 	desire access to the project from multiple devices. Since a remote repository is stored online, it can be 
 	accessed via any appropriate device with an internet connection and git installed.
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+	The new commit on the remote might be by another user, and you may want to review the changes before pulling them to your local repository. There might also be a discrepancy between branches if new commits on either repository branched off - you might want to review these manually before pulling.
