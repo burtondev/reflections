@@ -24,3 +24,7 @@ Describe the differences between forks, clones, and branches. When would you use
 	Forking is a form of cloning unique to the GitHub enviroment. GitHub essentially clones one repository on their servers to another repository on their servers. GitHub defaults forking with features such as referencing back 
 	to the original repository, showing a count of how many times the repository was forked, etc. You would use a 
 	fork whenever you wanted to edit a public GitHub repository that you did not have editing rights to.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+	A local copy of the last known state of the remote allows a user to work with it even if they don't have internet access, such as when boarding a plane. We can also use this copy to run commands such as git log or git diff against the local master.
