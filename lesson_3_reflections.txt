@@ -28,3 +28,11 @@ Describe the differences between forks, clones, and branches. When would you use
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
 	A local copy of the last known state of the remote allows a user to work with it even if they don't have internet access, such as when boarding a plane. We can also use this copy to run commands such as git log or git diff against the local master.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+	I honestly don't know enough about other version control software to make a comparison with GitHub. Without 
+	using version control software, I imagine that collaboration would be much more challenging and tedious. 
+	It would involve saving a new file as a backup each time, rather than just tracking changes through commits. The 
+	files would have to be shared, either via email, network drive, or USB key. Merging files would also be a 
+	challenge. It would be much more time consuming.
